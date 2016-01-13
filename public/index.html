@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>hapi realtime timeline with RethinkDB</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Realtime timeline</h1>
+      <p class="lead">Shows an example of a realtime timeline built with <a href="http://hapijs.com/" target="_blank">hapi</a> and the
+        <a href="https://github.com/hapijs/nes" target="_blank">nes</a> plugin. The database used is <a href="https://www.rethinkdb.com/" target="_blank">RethinkDB</a>.</p>
+      <p><a id="add-entry" class="btn btn-lg btn-success" href="#" role="button">Generate new timeline entry</a></p>
+    </div>
+
+    <div class="row">
+      <div id="timeline" class="col-md-12"></div>
+    </div>
+
+  </div>
+  <!-- /container -->
+
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+      <div class="bs-callout bs-callout-primary">
+        <h4><img class="avatar" src="{{avatar}}"/> {{user}}</h4>
+        <p>{{message}}</p>
+      </div>
+    </div>
+  </script>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>
