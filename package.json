@@ -11,12 +11,12 @@
   "author": "Patrick Meier",
   "license": "Apache-2.0",
   "dependencies": {
-    "faker": "^3.0.1",
+    "faker": "^3.1.0",
     "handlebars": "^4.0.5",
-    "hapi": "^12.0.1",
-    "inert": "^3.2.0",
-    "jquery": "^2.2.0",
-    "nes": "^2.0.2",
-    "rethinkdb": "^2.2.1"
+    "hapi": "^13.4.1",
+    "inert": "^4.0.0",
+    "jquery": "^3.0.0",
+    "nes": "^6.2.1",
+    "rethinkdb": "^2.3.2"
   }
 }
